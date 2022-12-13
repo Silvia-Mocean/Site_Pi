@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonofon Audiologie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+ <section class="header">
+    <nav>
+      <a href="index.html"><img src="sa-logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="desprenoi.html">Despre noi</a></li>
+                    <li><a href="login.html">Login/Creare cont</a></li>
+                    <li><a href="  ">Produsele si serviciile noastre</a></li>
+                    
+                </ul>
+        </div>   
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+
+ <div class="text-box">
+    <h1>SONOFON AUDIOLOGIE</h1>
+    <p>Consultatii  auditive | Protezare auditiva | Aparate auditive </p>
+    <a href="" class="hero-btn">Contact</a>
+ </div>
+
+ </section>
+
+<!---------Contact----------->
+<section class="contact">
+    <h1>Contact</h1>
+    <p>Ne poti contacta telefonic sau prin mail:</p>
+    <div class="row">
+        <div class="contact-col">
+            <h3>Telefon</h3>
+            <p>0745 123 456</p>
+        </div>
+        <div class="contact-col">
+            <h3>Email</h3>
+            <p>sonofonaudiologie@gmail.com</p>
+        </div>
+
+</section>
+
+
+
+
+ <!--------JavaScript for Toggle menu-------->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    } 
+
+ </script>   
+
+ <!---------Footer----------->
+<section class="footer">
+    <h4>Despre noi</h4>
+    <p>Sonofon Audiologie este o clinica de specialitate in domeniul auditivei, care ofera servicii de consultatie auditive, protezare auditiva si vanzare aparate auditive.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>© 2022 Sonofon Audiologie. All rights reserved.</p>
+</section>
+
+</body>
+</html>
